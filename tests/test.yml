@@ -1,0 +1,11 @@
+---
+- hosts: default
+  roles:
+  - ansible-gcloud-ubuntu
+  tasks:
+  - name: Check gcloud version
+    command: gcloud --version
+    register: result
+    changed_when: false
+  - debug:
+      var: result.stdout

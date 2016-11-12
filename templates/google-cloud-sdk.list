@@ -1,0 +1,1 @@
+deb https://packages.cloud.google.com/apt {{gcloud_cloud_sdk_repo}} main

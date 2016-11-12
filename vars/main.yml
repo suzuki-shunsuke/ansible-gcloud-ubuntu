@@ -1,0 +1,4 @@
+---
+# vars file for gcloud-ubuntu
+gcloud_nonroot: "{{ (ansible_env.HOME == '/root') | ternary('no', 'yes') }}"
+gcloud_cloud_sdk_repo: "cloud-sdk-{{ansible_distribution_release}}"
